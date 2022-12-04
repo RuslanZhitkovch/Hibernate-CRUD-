@@ -1,6 +1,13 @@
 package com.app;
 
+import org.hibernate.Hibernate;
+import org.hibernate.Session;
+
 import javax.persistence.*;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 @Entity       // указываем что будет создана сущность
 @Table (name = "books")
@@ -69,6 +76,7 @@ public class Books {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
 
 
     @Override
